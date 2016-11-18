@@ -97,3 +97,7 @@ test_that("strwidth has fallback for unknown glyphs", {
   })
   expect_true(w > 0)
 })
+
+test_that("test", {
+  expect_error(foobar(), "foobar")
+})

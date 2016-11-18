@@ -83,3 +83,8 @@ open_manual_tests <- function() {
     utils::browseURL(svglite_manual_tests[[test]])
   })
 }
+
+#' @useDynLib svglite foobar_
+foobar <- function() {
+  .Call(foobar_)
+}
